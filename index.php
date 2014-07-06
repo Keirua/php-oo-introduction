@@ -1,21 +1,6 @@
 <?php
 
-class OperationFactory{
-    public function getOperation($operationName){
-        $operation = null;
-        if ($operationName === 'add'){
-            $operation = new AddOperation();
-        }
-        elseif ($operationName === 'mul'){
-            $operation = new MulOperation();
-        }
-
-        if ($operation == null){
-            throw new LogicException ("Le type demandé n'existe pas".PHP_EOL);
-        }
-        return $operation;
-    }
-};
+require __DIR__.'/autoloader.php';
 
 $factory = new OperationFactory();
 try {
