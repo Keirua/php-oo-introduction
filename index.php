@@ -2,7 +2,7 @@
 
 require __DIR__.'/autoloader.php';
 
-$factory = new OperationFactory();
+$factory = new MathLib\Factory\OperationFactory();
 try {
     $addOperation = $factory->getOperation ('add');
     echo $addOperation->execute (2,3).PHP_EOL;
