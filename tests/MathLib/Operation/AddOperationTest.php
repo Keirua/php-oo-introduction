@@ -2,7 +2,7 @@
 
 class AddOperationTest extends PHPUnit_Framework_TestCase
 {
-    public function testAdd()
+    public function testExecute()
     {
         // Initialisation
         $addOperation = new MathLib\Operation\AddOperation;
