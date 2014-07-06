@@ -1,0 +1,18 @@
+{
+    "name": "keirua/php-oo-tutorial",
+    "description": "simple tutorial on OO",
+    "authors": [
+        {
+            "name": "Clement Keirua",
+            "email": "clement@keiruaprod.fr"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+       "classmap": [
+            "src/MathLib"
+        ]
+    }
+}
