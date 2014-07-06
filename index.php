@@ -1,21 +1,17 @@
 <?php
 
-abstract class Operation {
-    public function execute($a, $b){
-        echo "code from abstract class".PHP_EOL;
-    }
+interface Operation {
+    public function execute($a, $b);
 };
 
-class MulOperation extends Operation{
+class MulOperation implements Operation{
     public function execute($a, $b){
-        parent::execute($a, $b);
         return $a * $b;
     }
 };
 
-class AddOperation extends Operation{
+class AddOperation implements Operation{
     public function execute($a, $b){
-        parent::execute($a, $b);
         return $a + $b;
     }
 };
