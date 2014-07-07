@@ -12,3 +12,5 @@ It is divided in several branches, each branch introducing new concepts :
 * 4-onefile_factory_exception : introducing exceptions for error handling
 * 5-autoloader : added simple autoloader
 * 6-autoloader-psr0 : moved the files into namespaces, adding a simple psr0 autoloader
+* 7-composer : composer and psr0 namespacing
+* 8-unit-tests : unit tests using phpunit as composer dependency
